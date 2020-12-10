@@ -1,0 +1,118 @@
+@import url('link rel="preconnect" href="https://fonts.gstatic.com"');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet"')
+
+/*
+how should i use font for everything 
+
+*/
+
+
+:root {
+    max
+    font-family: 'Montserrat', sans-serif;
+    --main-font: 'Montserrat', sans-serif;
+    --text-color: 2c1942;
+    scroll-behavior: smooth;
+}
+
+header {
+    /*
+    font-family: var(--main-font);
+    color: var(--text-color);
+    does not work
+    */
+    
+    font-family: 'Montserrat', sans-serif;
+    color: #2c1942;
+}
+
+header .logo {
+    min-width: 240px;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    border: 1px solid transparent;
+    padding: 3px;    
+}
+
+header .phone_number {
+    display: none;
+}
+
+header .menu {
+    display: none;
+}
+
+
+
+header .social {
+    display: none;
+}
+
+@media (min-width:780px) {
+
+    header nav {
+        display: flex;
+        align-items: center;
+    }
+
+    header nav .phone_number {
+        display: block;
+        font-size: 19px;
+        font-weight: 400;
+        letter-spacing: 1.5px;
+        border: 1px solid transparent;
+        padding: 3px;
+    }
+
+    header nav .menu {
+        display: flex;
+        text-decoration: none;
+        color: var(--main-color);
+        border: 1px solid transparent;
+        padding: 3px;
+    }
+    
+    header nav .menu:hover {
+        color: #f18c60;
+    }
+
+    header nav .social {
+        display: flex;
+        max-height: 50px;
+    }
+
+    header nav .social:hover {
+        color: #f18c60;
+    }   
+
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #2f1745;
+    max-width: 1200px;
+    margin: center;
+}
+
+#banner {
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 750px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+h1 {
+    color: #2f1745;
+}
+
+#banner p {
+    color: #2f1745;
+}

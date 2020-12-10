@@ -4,19 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stylist Yulia Bentsak</title>
+    <link rel='stylesheet' href="css/index.css">
 </head>
 <body>
     <header>
-        <nav>
-                <!--
-                    it should be burger menu
-                -->
+        <nav class="menu_burger">
             <div class="logo">Stylist Yulia Bentsak</div>
             <div class="phone_number">
                 <!--
                     must be a call link
                 -->
-                <a href="#call"> +380966893822</a></div>
+                <a>+38 096 689 38 22</a></div>
                 
             <div class="menu">
                 <!--
@@ -24,31 +22,28 @@
                 -->
                 <a href="#portfolio">Portfolio</a>
                 <a href="#book_appointment">Book Appointment</a>
-                <a href="#contuct_Us">Contuct Us</a>
+                <a href="#contact_me">Contact Me</a>
             </div>
             <div class="social">
-                <button>f</button>
+                <img scr="/img/soc_facebook.png">
                 <button>i</button>
                 <button>y</button>
             </div>
         </nav>
-        <div class="banner">
+    </header>
+    <main>
+        <section id="banner">
             <h1>Stylist Yulia Bentsak</h1>
             <p>Creating uniqueness</p>
             <!--
                 q 1 missing link from button
             -->
             <button>book an appointment</button>
-        </div>
-    </header>
-    <main>
-    <!--
-        should i use div as it has background?
-    -->
-        <div class="welcome">
+        </section>
+        <section id="welcome">
             <h2>Welcome</h2>
             <p>I celebrate beauty and wellness in a relaxing and inviting atmosphere. Sit back and relax as our experts do their magic to enhance your look and individuality!</p>
-        </div>
+        </section>
         <div class="working_hours">
             <h3>workning hours</h3>
             <p>Tuesday-Friday: 8 am - 7 pm</p>
@@ -99,7 +94,7 @@
             </div>
         </div>
         <div class="portfolio">
-            <h2>Protfolio</h2>
+            <h2 id="portfolio">Protfolio</h2>
              <!--
                 how to make table with images?
             -->
@@ -130,7 +125,7 @@
                 background pic is missing
             -->
             <div>
-                <h2>Book an Appointment Now</h2>
+                <h2 id="book_appointment">Book an Appointment Now</h2>
                 <p>Enter your phone number and we will call you back within an hour.</p>
                 <form>
                     <input type="text" name="Email" placeholder="Email">
@@ -244,7 +239,7 @@
             </div> 
         </div>
         <div class="contacts">
-            <h2>Contacts</h2>
+            <h2 id="contact_me">Contacts</h2>
             <p>Stylist Yulia Bentsak</p>
             <p>Phone</p>
             <!--
