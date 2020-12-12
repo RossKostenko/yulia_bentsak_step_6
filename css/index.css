@@ -15,6 +15,13 @@ how should i use font for everything
     scroll-behavior: smooth;
 }
 
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #2f1745;
+    max-width: 1200px;
+    margin: auto;
+}
+
 header {
     /*
     font-family: var(--main-font);
@@ -23,18 +30,22 @@ header {
     */
     
     font-family: 'Montserrat', sans-serif;
-    color: #2c1942;
+    margin: 4px;
+
 }
 
 header .logo {
     min-width: 240px;
     display: block;
+    margin: 10px;
+    max-height: 29px;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 1.5px;
     border: 1px solid transparent;
-    padding: 3px;    
+    padding: 3px;
+    color: #2c1942e1;
 }
 
 header .phone_number {
@@ -45,43 +56,95 @@ header .menu {
     display: none;
 }
 
-
-
 header .social {
     display: none;
 }
 
-@media (min-width:780px) {
+@media (min-width:908px) {
 
     header nav {
         display: flex;
+        justify-content: space-around;
         align-items: center;
     }
 
     header nav .phone_number {
         display: block;
-        font-size: 19px;
+        margin: 10px;
+        max-height: 29px;
+        font-size: 18px;
         font-weight: 400;
         letter-spacing: 1.5px;
         border: 1px solid transparent;
         padding: 3px;
+        color: #2c1942f1;
     }
 
     header nav .menu {
         display: flex;
+        margin: 10px;
+        max-height: 29px;
         text-decoration: none;
-        color: var(--main-color);
         border: 1px solid transparent;
         padding: 3px;
+        color: #2c1942f1;
     }
-    
+
+    header nav .menu #portfolio {
+        display: block;
+        margin: 4px;
+        text-decoration: none;
+        color: #2c1942f1;
+        border: 1px solid transparent;
+        padding: 3px;
+
+    }
+
+    header nav .menu #book_appointment {
+        display: block;
+        margin: 4px;
+        text-decoration: none;
+        color: #2c1942f1;
+        border: 1px solid transparent;
+        padding: 3px;
+
+    }
+
+    header nav .menu #contacts {
+        display: block;
+        margin: 4px;
+        text-decoration: none;
+        color: #2c1942f1;
+        border: 1px solid transparent;
+        padding: 3px;
+
+    }
+  
     header nav .menu:hover {
         color: #f18c60;
     }
 
     header nav .social {
         display: flex;
-        max-height: 50px;
+        max-height: 29px;
+    }
+
+    header .social #facebook img {
+        display: block;
+        height: 23px;
+        width: 23px;
+    }
+
+    header .social #instagram img {
+        display: block;
+        height: 23px;
+        width: 23px;
+    }
+
+    header .social #youtube img {
+        display: block;
+        height: 23px;
+        width: 23px;
     }
 
     header nav .social:hover {
@@ -90,12 +153,7 @@ header .social {
 
 }
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    color: #2f1745;
-    max-width: 1200px;
-    margin: center;
-}
+
 
 #banner {
     background-image: url(../img/banner.jpg);
