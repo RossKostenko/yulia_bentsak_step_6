@@ -134,31 +134,33 @@ header .social {
         display: flex;
     }
 
-    header .social #facebook img {
+    header .social_a {
         display: block;
         margin: 0 4px 0 4px;
         height: 23px;
         width: 23px;
     }
 
-    header .social #instagram img {
-        display: block;
-        margin: 0 4px 0 4px;
+    #start {
         height: 23px;
-        width: 23px;
     }
 
-    header .social #youtube img {
-        display: block;
-        margin: 0 4px 0 4px;
-        height: 23px;
-        width: 23px;
+    /* header .social_a img .social-hover {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
     }
 
-    header .social:hover {
-        color: #f18c60;
+   header .social_a img:hover .social-hover{
+        opacity: 1;
     }   
-
+    */
 }
 
 
