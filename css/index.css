@@ -13,25 +13,22 @@ how should i use font for everything
     --main-font: 'Montserrat', sans-serif;
     --text-color: 2c1942;
     scroll-behavior: smooth;
+    --delay: 0.2s;
+    --text-color: #2c1942f1;
+    --hover-text-color: #f18c60;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
-    color: #2f1745;
+    color: #2f1745e1;
     max-width: 1200px;
     margin: auto;
 }
 
-header {
-    /*
-    font-family: var(--main-font);
-    color: var(--text-color);
-    does not work
-    */
-    
-    font-family: 'Montserrat', sans-serif;
-    margin: 4px;
 
+
+header {
+    font-family: 'Montserrat', sans-serif;
 }
 
 header .logo {
@@ -70,84 +67,95 @@ header .social {
 
     header nav .phone_number {
         display: block;
-        margin: 10px;
+        margin: 0 10px 0 10px;
         max-height: 29px;
         font-size: 18px;
         font-weight: 400;
         letter-spacing: 1.5px;
-        border: 1px solid transparent;
-        padding: 3px;
+        border: 0;
+        padding: 0;
         color: #2c1942f1;
     }
 
     header nav .menu {
         display: flex;
-        margin: 10px;
-        max-height: 29px;
+        align-items: center;
+        margin: 0 10px 0 10px;
+        height: 29px;
         text-decoration: none;
-        border: 1px solid transparent;
-        padding: 3px;
+        border: 0;
+        padding: 0;
         color: #2c1942f1;
     }
 
     header nav .menu #portfolio {
         display: block;
-        margin: 4px;
+        margin: 0 7px 0 7px;
         text-decoration: none;
         color: #2c1942f1;
-        border: 1px solid transparent;
-        padding: 3px;
+        border: 0;
+        padding: 0;
 
     }
 
     header nav .menu #book_appointment {
         display: block;
-        margin: 4px;
+        margin: 0 7px 0 7px;
         text-decoration: none;
         color: #2c1942f1;
-        border: 1px solid transparent;
-        padding: 3px;
+        border: 0;
+        padding: 0;
 
     }
 
     header nav .menu #contacts {
         display: block;
-        margin: 4px;
+        margin: 0 7px 0 7px;
         text-decoration: none;
         color: #2c1942f1;
-        border: 1px solid transparent;
-        padding: 3px;
+        border: 0;
+        padding: 0;
 
     }
   
-    header nav .menu:hover {
-        color: #f18c60;
+    header nav .menu #portfolio:hover {
+        color: #e3a693;
+    }
+
+    header nav .menu #book_appointment:hover {
+        color: #e3a693;
+    }
+
+    header nav .menu #contacts:hover {
+        color: #e3a693;
     }
 
     header nav .social {
         display: flex;
-        max-height: 29px;
     }
 
     header .social #facebook img {
         display: block;
+        margin: 0 4px 0 4px;
         height: 23px;
         width: 23px;
     }
 
     header .social #instagram img {
         display: block;
+        margin: 0 4px 0 4px;
         height: 23px;
         width: 23px;
     }
 
     header .social #youtube img {
         display: block;
+        margin: 0 4px 0 4px;
         height: 23px;
         width: 23px;
     }
 
-    header nav .social:hover {
+    header .social:hover {
         color: #f18c60;
     }   
 
@@ -168,9 +176,125 @@ header .social {
 
 
 h1 {
-    color: #2f1745;
+    color: #2f1745f1;
+    font-size: 18.5px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+
 }
 
-#banner p {
-    color: #2f1745;
+.h_one_container {
+    height: 350px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.h_one_container h1 {
+    display: block;
+    margin: 0 2px 20px 10px;
+}
+
+.book_button_container {
+    height: 200px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+button {
+    appearance: button;
+    opacity: 0.5;
+    background-image: linear-gradient(to right, #e2798af1 , #e3a693f1);
+    text-transform: uppercase;
+    font-size: 14.5px;
+    font-weight: 200;
+    letter-spacing: 0.5px;
+    color: white;
+    border-radius: 25px;
+    padding: 10px 20px;
+    transition: background-color 1s;
+    border:#fbfbfdf1;
+
+}
+
+.button_app {
+    display: block;
+    margin: 0 0 0 5px;
+}
+
+button:hover {
+    opacity: 1;
+    delay: 0.4s;
+}
+
+#welcome {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 0 0 70px 0;
+}
+
+#welcome .spaces {
+    display: flex;
+    justify-content: center;
+}
+
+#welcome img {
+    width: 70px;
+    height: 70px;
+}
+
+#welcome h2 {
+    text-align: center;
+    margin: 40px 0 70px 0;
+    letter-spacing: 0.5px;
+}
+
+#welcome p {
+    max-width: 500px;
+    text-align: center;
+    margin: auto;
+    letter-spacing: 0.3px;
+}
+
+#working_hours {
+    display: flex;
+    justify-content: center;
+    background-color: #f7f8fa;
+}
+
+#working_hours .image {
+    margin: 50px 0 50px 0; 
+    max-width: 500px;
+    min-width: 310px;
+    background-image: linear-gradient(to right, #e3a693, #e2798a );
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+#working_hours .image h3 {
+    margin: 7px 0 0 0;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: white;
+}
+
+#working_hours .image p {
+    text-align: center;
+    letter-spacing: 0.3px;
+    color: white;
+    margin 0;
+}
+
+#carouselExampleCaptions h5 {
+    color: #2c1942f1;
+    opacity: 0.8;
+}
+
+#carouselExampleCaptions p {
+    color: #2c1942f1;
+    opacity: 0.8;
 }

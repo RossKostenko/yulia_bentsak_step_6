@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stylist Yulia Bentsak</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel='stylesheet' href="css/index.css">
+    
 </head>
 <body>
     <header>
@@ -25,29 +27,87 @@
                 <a id="contacts" href="#contacts">Contacts</a>
             </div>
             <div class="social">
-                <a id="facebook"><img src="img/soc_facebook.png"></a> 
-                <a id="instagram"><img src="img/soc_instagram.png"></a> 
-                <a id="youtube"><img src="img/soc_youtube.png"></a> 
+                <a id="facebook" href="/"><img src="img/soc_facebook.png" alt="Facebook Icon"></a> 
+                <a id="instagram" href="/"><img src="img/soc_instagram.png" alt="Instagram Icon"></a> 
+                <a id="youtube" href="/"><img src="img/soc_youtube.png" alt="Youtube Icon"></a> 
             </div>
         </nav>
     </header>
     <main>
         <section id="banner">
-            <h1>Stylist Yulia Bentsak</h1>
-            <p>Creating uniqueness</p>
             <!--
-                q 1 missing link from button
+                can i use web-ste without h1
+                <h1>Stylist Yulia Bentsak</h1>
             -->
-            <button>book an appointment</button>
+            <div class="h_one_container">
+                <h1>Creating uniqueness</h1>
+            </div>
+            <div class="book_button_container">
+                <div class="button_app">
+                    <button id="book_button">book appointment</button>
+                </div>
+            </div>
         </section>
         <section id="welcome">
+            <div class="spaces">
+                <img src="img/spaces.png" alt="Nice Buttons">
+            </div>
             <h2>Welcome</h2>
             <p>I celebrate beauty and wellness in a relaxing and inviting atmosphere. Sit back and relax as our experts do their magic to enhance your look and individuality!</p>
+            </div>
         </section>
+        <section id="working_hours">
+            <div class="image">
+                <h3>workning hours</h3>
+                <p>
+                    <br>Tuesday-Friday: 8 am - 7 pm</br>
+                    <br>Saturday-Sunday: 8 am - 6 pm</br>
+                </p>
+            </div>
+        </section>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="img/carousel_style.jpg" class="d-block w-100" alt="Style Picture">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Style</h5>
+                    <p>Every person is unique. style in mind or need a professional to help pick the one that suits you the best, we've got you covered! I'm experienced stylists and i'm here to create the look that compliments your uniqueness.</p>
+                </div>
+                </div>
+                <div class="carousel-item">
+                <img src="img/carousel_make_up.jpg" class="d-block w-100" alt="Make-up Picture">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Make-up</h5>
+                    <p>I'm excited to take your look to the next level while still making you feel like you. We use a wide range of popular and high-end makeup brands. You can stay with your preferred makeup or let our team experiment with new colors, styles, and looks.</p>
+                </div>
+                </div>
+                <div class="carousel-item">
+                <img src="img/carousel_body_painting.jpg" class="d-block w-100" alt="Body Painting Picture">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Body Painting</h5>
+                    <p>I can always help you out with this miraculous task. You can use all my imagination and creativity. </p>
+                </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
 
     </main>
     <footer>
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
 </html>
