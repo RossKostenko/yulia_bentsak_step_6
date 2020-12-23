@@ -1,14 +1,14 @@
 {
     const images = [
-        'img/carousel_style.jpg'
-        'img/carousel_make_up.jpg'
+        'img/carousel_style.jpg',
+        'img/carousel_make_up.jpg',
         'img/carousel_body_painting.jpg'
     ]
+    
 
     let currentIdx = 0;
-
     function showCurrent() {
-        const imgElement = document.querySelector('.carousel-try .carousel-test');
+        const imgElement = document.querySelector('#carousel-try .carousel-img-test');
         imgElement.src = images[currentIdx];
     }
 
@@ -26,8 +26,11 @@
 
     setInterval(showNext, 3000);
 
-    document.querySelector('.carousel-try .next').addEventListener('click', showNext);
-    document.querySelector('.carousel-try .prev').addEventListener('click', showPrev);
+    document.querySelector('#carousel-try .next').addEventListener('click', showNext);
+    document.querySelector('#carousel-try .prev').addEventListener('click', showPrev);
 
     showCurrent();
+
+    // let carouselSection = document.querySelector('#carousel-try');
+    // carouselSection.style.width = '320px';
 }

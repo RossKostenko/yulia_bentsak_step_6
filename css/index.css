@@ -134,7 +134,7 @@ header .social {
         display: flex;
     }
 
-    header .social_a {
+    header .social_a #start_facebook, #start_instagram, #start_youtube {
         display: block;
         margin: 0 4px 0 4px;
         height: 23px;
@@ -143,6 +143,10 @@ header .social {
 
     #start {
         height: 23px;
+    }
+
+    header .social .social-hover {
+        display: none;
     }
 
     /* header .social_a img .social-hover {
