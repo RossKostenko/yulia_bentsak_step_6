@@ -224,6 +224,10 @@ button {
 
 }
 
+button:hover {
+    border: none;
+}
+
 .button_app {
     display: block;
     margin: 0 0 0 5px;
@@ -303,4 +307,139 @@ button:hover {
 #carouselExampleCaptions p {
     color: #2c1942f1;
     opacity: 0.8;
+}
+
+.price-section-h2 {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 20px 0;
+}
+
+.price_headers {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 20px 0;
+}
+
+.price_headers button {
+    margin: 0 5px 0 5px;
+    opacity: 1;
+    background-image:none;
+    background-color: white; 
+    color:  #2f1745e1;
+    text-transform: uppercase;
+    font-size: 14.5px;
+    font-weight: 200;
+    letter-spacing: 0.5px;
+    border-radius: 0;
+    padding: 10px 20px;
+}
+
+.price_headers button:hover {
+    color: #e3a693;
+    transition: 0,5s;
+}
+
+.price-contaiiner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-contaiiner .money-amount p{
+    color: #e3a693;
+    margin: 2px 7px 2px 2px;
+    
+}
+
+.price-contaiiner .price-info {
+    margin: 2px 2px 2px 7px;
+}
+
+.style-container, .body-painting-container, .make-up-contaiiner{
+    display: block;
+}
+
+@media(min-width:475px) {
+    .style-container, .body-painting-container, .make-up-contaiiner{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
+
+.displayOff {
+    display: none;
+}
+
+#price_selection {
+    margin: 0 0 50px 0;
+}
+
+#brands-i-use {
+    background-color: #f7f8fa;
+    opacity: 1;
+    margin: 0 150px 0 150px;
+}
+
+.biu-header {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 20px 0;
+}
+
+
+
+.brands {
+    display: block;
+    
+}
+
+.brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+    background-image: linear-gradient(to right, #e2798af1 , #e3a693f1);
+    color: white;
+    border: 4px solid white;
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+
+.brand p{
+    font-size: 20.5px;
+}
+
+@media (min-width:475px){
+    .brands {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media (min-width:780px){
+    .brands {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+}
+#portfolio {
+    max-width: 1280px;
+}
+
+.portfolio-header {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 20px 0;
+}
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-width: 1280px;
+}
+
+.portfolio-pic {
+    margin: 20px 20px 20px 20px;
+    border: 4px solid white;
+    border-radius: 12px;
 }
