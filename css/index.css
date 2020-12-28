@@ -588,6 +588,7 @@ button:hover {
 #about-me-social {
     display: flex;
     justify-content: center;
+    padding: 0 0 75px 0;
 }
 
 .about-me-social-icons {
@@ -600,3 +601,196 @@ button:hover {
     width: 23px;
     height: 23px;
 }
+
+#moto {
+    padding: 75px 0 45px 0;
+    background-image: linear-gradient(to right, #e2798a99 , #e3a69399);
+}
+
+
+.yul-moto {
+    display: flex;
+    justify-content: center;
+}
+
+.yul-moto p{
+    font-size: 18px;
+}
+
+.yb {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 0 0;
+}
+
+.yb p {
+    font-size: 21px;
+}
+
+#reviews {
+    padding: 75px 0 50px 0;
+}
+
+.reviews-h2 {
+    padding: 0 0 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.karen-bonera-pic, .zack-royes-pic, .megan-frost-pic, .character, .review {
+    display: flex;
+    justify-content: center;
+    padding: 10px 15px 10px 15px;
+}
+
+.character, .review {
+    text-align: center;
+}
+
+.character p, .review p {
+    max-width: 450px;
+}
+
+.karen-bonera-img, .zack-royes-img, .megan-frost-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+#gift-cards {
+    padding: 100px 0 50px 0;
+}
+
+.gift-cards-h2 {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 30px 0;
+}
+
+.gift-cards {
+    display: flex;
+    justify-content: center;
+}
+
+.gift-card-img {
+    max-width: 300px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 10%;
+}
+
+.buy-gift-card {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 50px 0;
+}
+
+#contact-me {
+    padding: 75px 15px 75px 15px;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    background-image: url(../img/contact_background.jpg);
+    display: flex;
+    justify-content: center;
+}
+
+.empty-contact-me {
+    display: none;
+}
+
+.contact-me-form {
+    display: block;
+    height: 450px;
+    min-width: 320px;
+    max-width: 450px;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    border-radius: 24px;
+    opacity: 0.95;
+    
+}
+
+
+.contact-me-h2, .contact-input, .chosen-services-d, .book-appointment {
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px 10px 10px;
+}
+
+.input-contact, #chosen-services-values{
+    width: 320px;
+    max-width: 420px;
+    border-radius: 20px;
+    background-color: #eaeaea;
+    color: #2c1942f1;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    box-sizing: border-box;
+    font-size: 11px;
+}
+
+.contact-me-h2 h2{
+    font-size: 20px;
+    text-align: center;
+    margin: 40px 0 0 0;
+}
+
+@media(min-width:640px){
+    
+    .empty-contact-me {
+        display: block;
+    }   
+    
+    #contact-me {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+}
+
+#contacts {
+    padding: 100px 0 100px 0;
+}
+
+.contacts-h2 {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+}
+
+.contacts-yb {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px 0 20px 0;
+}
+
+.contacts-yb h2{
+    color: #e3a693;
+}
+
+#countdown-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+#countdown {
+    padding: 20px 10px 20px 10px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+#sale-h2 {
+    text-align: center;
+}
+
+.time {
+    padding: 10px 20px 10px 20px;
+    justify-self: center;
+}
+
