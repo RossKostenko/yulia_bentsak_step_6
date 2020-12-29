@@ -1,36 +1,27 @@
-{
-    const images = [
-        'img/carousel_style.jpg',
-        'img/carousel_make_up.jpg',
-        'img/carousel_body_painting.jpg'
-    ]
-    
 
-    let currentIdx = 0;
-    function showCurrent() {
-        const imgElement = document.querySelector('#carousel-try .carousel-img-test');
-        imgElement.src = images[currentIdx];
+productListDomString = '
+    <div class="review-karen">
+        <div class="character-pic">
+            <img class="character-img" src="img/${this.image}" alt="${this.name}">
+        </div>
+        <div class="character">
+            <p>${this.name}</p>
+        </div>
+        <div class="review">
+            <p>${this.text}</p>
+        </div>
+    </div>';
+
+    class NiceReviews {
+        constructor() {
+            fetch('reviews.json')
+                .then(response => response.json());
+                .then(reviews => {
+                    this.reviews = reviews;
+                    showReview();
+                } )
+        } 
+        showReview() {
+            this.reviews.length;
+        }
     }
-
-    function showNext() {
-        currentIdx++;
-        if (currentIdx >= images.length) currentIdx = 0;
-        showCurrent();
-    }
-
-    function showPrev() {
-        currentIdx--
-        if (currentIdx < 0) currentIdx = images.length -1;
-        showCurrent();
-    }
-
-    setInterval(showNext, 3000);
-
-    document.querySelector('#carousel-try .next').addEventListener('click', showNext);
-    document.querySelector('#carousel-try .prev').addEventListener('click', showPrev);
-
-    showCurrent();
-
-    // let carouselSection = document.querySelector('#carousel-try');
-    // carouselSection.style.width = '320px';
-}

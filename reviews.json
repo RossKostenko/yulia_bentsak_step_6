@@ -1,0 +1,21 @@
+[
+    {
+        "id": "1",
+        "name": "Karen Bonera",
+        "image": "karen_bonera.jpg",
+        "text": "\"My First visit to Yulia Bentsak was above expectations. She is real professional and her work speaks for itself. I would definitely recommend their services to anyone.\""
+    },
+     {
+        "id": "2",
+        "name": "Zack Royes",
+        "iamge": "zack-royes.jpg",
+        "text": "\"This was the best salon experience I've ever had. Very comfortable, peacful atmosphere. Everyone was so friendly and welcoming. I get tons of compliments about my new look. Thank you so much, keep beeing awesome!\""
+    },
+    {
+        "id": "3",
+        "name": "Megan Frost",
+        "image": "megan-frost.jpg",
+        "text": "\"i am happy to be client of Yulia Bentsak! Her understanding of style do a stellar job every time!\""
+    },
+
+]
