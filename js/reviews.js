@@ -1,18 +1,21 @@
+let idx = 0;
+
 class NiceReviews {
     constructor() {
         fetch('reviews.json')
-            .then(response => response.json());
+            .then(response => response.json())
             .then(reviews => {
                 this.reviews = reviews;
                 showCurrentReview();
             } )
-    } 
-    let idx = 0;
+    }
+
+
+    
     showCurrentReview() {
         this.currentReview = this.reviews[idx];
-        const reviewElement = document.querySelector(.review-container);
-        reviewElement.innerHtml = '
-        <div class="reviews">
+        const reviewElement = document.querySelector('.review-container');
+        reviewElement.innerHTML  = '<div class="reviews">
             <div class="character-pic">
                 <img class="character-img" src="img/${currentReviews.image}" alt="${currentReviews.name}">
             </div>
@@ -22,12 +25,12 @@ class NiceReviews {
             <div class="review">
                 <p>${currentReviews.text}</p>
             </div>
-    </div>';
+        </div>';
 
     function showNextReview() {
         idx++;
         if (idx >= reviews.length) idx = 0;
-        showCurrent();
+        showCurrentReview();
     }
 
     function showPrevReview() {
@@ -36,8 +39,8 @@ class NiceReviews {
         showCurrentReview();
     }
 
-    document.querySelector('.reviews .next').addEventListener('click', showNextReview);
-    document.querySelector('.reviews .prev').addEventListener('click', showPrevReview);
+    document.querySelector('.next-review').addEventListener('click', showNextReview);
+    document.querySelector('.prev-review').addEventListener('click', showPrevReview);
 
     showCurrentReview();
 }

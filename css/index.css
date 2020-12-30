@@ -631,13 +631,22 @@ button:hover {
     padding: 75px 0 50px 0;
 }
 
+.prev-review, .next-review {
+    max-width: 30px;
+}
+
 .reviews-h2 {
     padding: 0 0 50px 0;
     display: flex;
     justify-content: center;
 }
 
-.karen-bonera-pic, .zack-royes-pic, .megan-frost-pic, .character, .review {
+.reviews-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.character-pic, .character, .review {
     display: flex;
     justify-content: center;
     padding: 10px 15px 10px 15px;
@@ -651,7 +660,7 @@ button:hover {
     max-width: 450px;
 }
 
-.karen-bonera-img, .zack-royes-img, .megan-frost-img {
+.character-img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
