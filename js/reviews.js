@@ -15,7 +15,7 @@ class NiceReviews {
     showCurrentReview() {
         this.currentReview = this.reviews[idx];
         const reviewElement = document.querySelector('.review-container');
-        reviewElement.innerHTML  = '<div class="reviews">
+        reviewElement.innerHTML  = `<div class="reviews">
             <div class="character-pic">
                 <img class="character-img" src="img/${currentReviews.image}" alt="${currentReviews.name}">
             </div>
@@ -25,7 +25,8 @@ class NiceReviews {
             <div class="review">
                 <p>${currentReviews.text}</p>
             </div>
-        </div>';
+        </div>`;
+    }
 
     function showNextReview() {
         idx++;
@@ -33,7 +34,7 @@ class NiceReviews {
         showCurrentReview();
     }
 
-    function showPrevReview() {
+    function showPrevRevew() {
         idx--
         if (idx < 0) idx = reviews.length -1;
         showCurrentReview();
